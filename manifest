@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: Circular time picker using a scroll wheel concept.  Based on KPTimePicker by Kasper Pihl Tornøe
+author: Cool Elephant Ltd
+license: MIT
+copyright: Cool Elephant Ltd, 2014
+
+
+# these should not be edited
+name: TiCircularTimePicker
+moduleid: co.coolelephant.titimepicker
+guid: 76c03a59-45fb-434b-83f4-89b82452163e
+platform: iphone
+minsdk: 3.2.0.GA
