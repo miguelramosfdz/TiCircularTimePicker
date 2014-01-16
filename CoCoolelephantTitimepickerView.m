@@ -13,7 +13,7 @@
 {
     if( timePicker == nil )
     {
-        NSLog(@"INITIALIZING VIEW %@",[self frame]);
+        //NSLog(@"INITIALIZING VIEW %@",[self frame]);
         timePicker = [[KPTimePickerCustom alloc] initWithFrame:[self frame]];
         
         //[self setMinimumValue_:[self.timePicker.pickingDate dateAtStartOfDay]];
@@ -30,7 +30,7 @@
 
 -(void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
-    NSLog(@"[VIEW LIFECYCLE EVENT] frameSizeChanged: %@", timePicker);
+    //NSLog(@"[VIEW LIFECYCLE EVENT] frameSizeChanged: %@", timePicker);
     
     if (timePicker != nil) {
         
@@ -74,7 +74,7 @@
 
 -(void)setCurrentDate_:(id)date
 {
-    NSLog(@"setCurrentDate");
+    //NSLog(@"setCurrentDate");
     pickerDate = [NSDate dateWithTimeIntervalSince1970:[TiUtils intValue:date]];
     [[self timePicker] setPickingDate:pickerDate];
 }
